@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Sidd';
+    src: url("CercoDEMO-Bold.otf");
+}
+
+
+.container {
+    background-image: url("bg.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+    width: 100%;
+    color: white;
+    font-family: 'Sidd';
+}
+
+.first {
+    font-size: 1.2rem;
+}
+
+span {
+    font-size: 4rem;
+}
+
+.second {
+    font-size: 2.3rem;
+}
+
+.third {
+    text-align: center;
+    padding: 2.2rem;
+    background-color: black;
+    color: white;
+    font-size: 1.9rem;
+    word-spacing: 1.2rem;
+    font-family: 'Sidd';
+
+}
+
+.third span.span {
+    font-size: 5rem;
+}
+
+.works {
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+    margin: 3.1rem 0;
+}
+
+.works img {
+    width: 100%;
+}
+
+.cards {
+    width: 25%;
+    box-shadow: 0px 13px 27px -5px rgba(50, 50, 93, 0.25), 0px 8px 16px -8px rgba(0, 0, 0, 0.3), 0px -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.cards:hover {
+    box-shadow: 0px 4px 6px 0px rgba(50, 50, 93, 0.11), 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s;
+    transform: translateY(-.2%);
+}
+
+.cards h2 {
+    font-family: 'Sidd';
+    text-decoration: underline;
+    margin: 0.5rem 0 0 1.1rem;
+}
+
+.descripition {
+    margin: 1.1rem 0;
+    padding: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    /* text-align: justify; */
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.about {
+    background-color: #722300;
+    color: white;
+}
+
+.contact {
+    background-color: #515603;
+    color: white;
+}
+
+
+.info_content {
+    padding: 2rem 4rem 6rem 4rem;
+    margin-top: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.info_content h2 {
+    margin-bottom: 1.2rem;
+    font-family: 'Sidd';
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+
+.one h2,
+.two h2,
+.three h2 {
+    font-family: 'Sidd';
+}
+
+.line {
+    width: 45%;
+    border: 2px solid red;
+}
+
+.line:last-child {
+    width: 98%;
+    border: 2px solid red;
+}
+
+.one ul,
+.two ul {
+    list-style: none;
+    margin: 0.8rem 0;
+}
+
+.one ul li,
+.two ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tags {
+    margin: 0.8rem 0;
+    display: flex;
+    gap: 0.8rem;
+    font-size: 1.7rem;
+}
+
+.tag-elements i {
+    color: white;
+}
+
+#instagram i:hover {
+    color: #C13584;
+    transform: translateY(-19%);
+    transition: all 0.5\3s;
+}
+
+#linkedin i:hover {
+    color: #006192;
+    transform: translateY(-19%);
+    transition: all 0.3s;
+}
+
+#github i:hover {
+    color: #4183c4;
+    transform: translateY(-19%);
+    transition: all 0.3s;
+}
+
+/* Media Query */
+
+@media (max-width:500px) {
+    .content {
+        padding: 1.2rem;
+    }
+
+    .first {
+        font-size: 0.7rem;
+    }
+
+    span {
+        font-size: 3.0rem;
+    }
+
+    .second {
+        font-size: 1.1rem;
+    }
+
+    .third {
+        font-size: 0.8rem;
+    }
+
+    .third span.span {
+        font-size: 3.2rem;
+    }
+}
+
+@media(max-width:750px) {
+    .works {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        width: 60%;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:650px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
